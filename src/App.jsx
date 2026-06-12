@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 //import { useState } from "react"
 
-import inicio from './pages/inicio'
-import error from './pages/error'
-import details from './details'
+import Inicio from './pages/inicio'
+import Error from './pages/error'
+import Details from './details'
 
 import Menu from './components/Menu'
 
@@ -11,11 +11,11 @@ function App() {
 
     return (
         <BrowserRouter>
-
+            <Menu/>
             <Routes>
-                <Route path="/" element={<inicio />} />
-                <Route path="/products/:product" element={<details />} />
-                <Route path="*" element={<error />} />
+                <Route path="/" element={<Inicio />} />
+                <Route path="/products/:product" element={<Details />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )

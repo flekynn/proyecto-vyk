@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-function details(){
+function Details(){
 let {product}= useParams()
 
 return(
@@ -8,4 +8,4 @@ return(
 )
 }
 
-export default details
+export default Details

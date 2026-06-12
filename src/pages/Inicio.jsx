@@ -1,10 +1,10 @@
 import './styles/inicio.css'
 
-function inicio(){
+function Inicio(){
 
 
     
 }
 
 
-export default inicio
+export default Inicio
