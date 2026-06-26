@@ -6,6 +6,7 @@ import Error from './pages/error'
 import Details from './details'
 
 import Menu from './components/Menu'
+import Winter2026 from "./pages/winter2026"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <BrowserRouter>
             <Menu/>
             <Routes>
-                <Route path="/" element={<Inicio />} />
+                <Route path="/winter2026" element={<Winter2026 />} />
                 <Route path="/products/:product" element={<Details />} />
                 <Route path="*" element={<Error />} />
             </Routes>

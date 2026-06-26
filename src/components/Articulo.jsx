@@ -1,3 +1,4 @@
+import "./styles/Articulo.css";
 function Articulo({imagen, nombre, precio}) {
     return (
         <div className="articulo">
