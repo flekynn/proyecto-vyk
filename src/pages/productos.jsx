@@ -1,6 +1,6 @@
 import Articulo from "../components/Articulo";
 
-function Winter2026() {
+function Productos() {
   const articulos = [
     {
       id: 1,
@@ -36,4 +36,4 @@ function Winter2026() {
   );
 }
 
-export default Winter2026;
+export default Productos;
