@@ -19,7 +19,7 @@ function AccountSidebar({ isOpen, onClose }) {
         </div>
       </div>
     </>
-  );
+  ); 
 }
 
 export default AccountSidebar;
