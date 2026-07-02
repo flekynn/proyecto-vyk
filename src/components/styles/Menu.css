@@ -3,11 +3,20 @@ nav {
     background-color: #111;
     padding: 15px 40px;
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: visible;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
 }
 
 nav ul {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     gap: 35px;
     list-style: none;
@@ -77,9 +86,15 @@ nav a:hover,
         padding: 15px;
     }
 
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     nav ul {
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
 
     .dropdown-menu {

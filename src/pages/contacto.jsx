@@ -2,7 +2,7 @@ import "./styles/Contacto.css";
 
 function Contacto() {
   return (
-    <div>
+    <div className="contacto">
       <h1>Contacto</h1>
       <form className="form-contacto">
         <label htmlFor="nombre">Nombre:</label>

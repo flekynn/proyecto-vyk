@@ -17,8 +17,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-item">
-          <h3>20% OFF</h3>
-          <p>Pagando con transferencia</p>
+          <h3>10% OFF</h3>
+          <p>Pagando con efectivo otransferencia</p>
         </div>
       </div>
 
@@ -43,10 +43,10 @@ const Footer = () => {
 
       {/* INFO */}
       <div className="footer-info">
-        <p>5491160498050</p>
-        <p>1160498050</p>
-        <p>proyectovyk@gmail.com</p>
-        <p>La Morochita 1234, Tero Violado</p>
+        <p>+54 9 11 3250-0747</p>
+        <p>+54 9 11 5151-2006</p>
+        <p>ddescosiendote@gmail.com</p>
+        <p>Bahia Negra, Tero Violado</p>
       </div>
 
       {/* COPYRIGHT */}

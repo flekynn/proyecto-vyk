@@ -1,79 +1,18 @@
-{
-    "posts": [
-        {
-            "id": "1",
-            "title": "a title",
-            "views": 100
-        },
-        {
-            "id": "2",
-            "title": "another title",
-            "views": 200
-        }
-    ],
-    "comments": [
-        {
-            "id": "1",
-            "text": "a comment about post 1",
-            "postId": "1"
-        },
-        {
-            "id": "2",
-            "text": "another comment about post 1",
-            "postId": "1"
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+ {
+      id: 1,
+      nombre: "Campera Negra",
+      precio: 80000,
+      imagen: "/imagenes/campera.jpg",
     },
-    "contacto": [
-        {
-            "id": 1184938302,
-            "name": "JEISON",
-            "imgn": "gilberto.png",
-            "ultmsg": "no jeison",
-            "mensajes": [
-                {
-                    "msj": "instala mis packages",
-                    "remitente": "JEISON"
-                },
-                {
-                    "msj": "no jeison",
-                    "remitente": "tú"
-                }
-            ]
-        },
-        {
-            "id": 1112345678,
-            "name": "pomberito",
-            "imgn": "kuko.png",
-            "ultmsg": "abrime estoy afuera",
-            "mensajes": [
-                {
-                    "msj": "dupuy",
-                    "remitente": "pomberito"
-                },
-                {
-                    "msj": "ahi voy",
-                    "remitente": "tú"
-                }
-            ]
-        },
-        {
-            "id": 123,
-            "name": "loganxd",
-            "imgn": "willy rata.png",
-            "ultmsg": "ndeah",
-            "mensajes": [
-                {
-                    "msj": "sos un yeti",
-                    "remitente": "loganxd"
-                },
-                {
-                    "msj": "ahi voy",
-                    "remitente": "tú"
-                }
-            ]
-        }
-    ]
-}
+    {
+      id: 2,
+      nombre: "Buzo Gris",
+      precio: 55000,
+      imagen: "/imagenes/buzo.jpg",
+    },
+    {
+      id: 3,
+      nombre: "Pantalón Cargo",
+      precio: 70000,
+      imagen: "/imagenes/cargo.jpg",
+    },

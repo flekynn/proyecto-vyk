@@ -1,0 +1,50 @@
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn:hover {
+  color: #b48c5a;
+  transform: scale(1.1);
+}
+
+.action-btn i {
+  font-size: 18px;
+  color: #ffdd00;
+}
+
+.action-btn:hover i {
+  color: #b48c5a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-actions {
+    gap: 10px;
+  }
+
+  .action-btn {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+
+  .action-btn i {
+    font-size: 16px;
+  }
+}

@@ -2,7 +2,9 @@ import './styles/inicio.css'
 
 function Inicio(){
     return(
-        <p>soy el inicio hola</p>
+        <div className="inicio">
+        <img src="PORTADA.png" alt="Portada" />
+        </div>
     )    
 }
 
