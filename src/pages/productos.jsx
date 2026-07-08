@@ -1,37 +1,50 @@
+import { useSearchParams } from "react-router-dom";
 import Articulo from "../components/Articulo";
+import "./styles/Productos.css";
+
+import { useState, useEffect } from "react";
 
 function Productos() {
-  const articulos = [
-    {
-      id: 1,
-      nombre: "Campera Negra",
-      precio: 80000,
-      imagen: "/imagenes/campera.jpg",
-    },
-    {
-      id: 2,
-      nombre: "Buzo Gris",
-      precio: 55000,
-      imagen: "/imagenes/buzo.jpg",
-    },
-    {
-      id: 3,
-      nombre: "Pantalón Cargo",
-      precio: 70000,
-      imagen: "/imagenes/cargo.jpg",
-    },
-  ];
+  const [searchParams] = useSearchParams();
+  const searchTerm = searchParams.get("busca") || "";
+
+  const [articulos, setArticulos] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/productos")
+      .then((data) => data.json())
+      .then((resultado) => setArticulos(resultado))
+      .catch((error) => console.error("Error al cargar los datos:", error));
+  }, []);
+
+  const articulosFiltrados = searchTerm
+    ? articulos.filter((articulo) =>
+        articulo.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    : articulos;
 
   return (
     <div className="contenedor-articulos">
-      {articulos.map((articulo) => (
-        <Articulo
-          key={articulo.id}
-          nombre={articulo.nombre}
-          precio={articulo.precio}
-          imagen={articulo.imagen}
-        />
-      ))}
+      {searchTerm && (
+        <div style={{ gridColumn: "1 / -1", marginBottom: "20px", textAlign: "center" }}>
+          <p>Resultados de búsqueda para: <strong>{searchTerm}</strong></p>
+          <p>{articulosFiltrados.length} producto(s) encontrado(s)</p>
+        </div>
+      )}
+      {articulosFiltrados.length > 0 ? (
+        articulosFiltrados.map((articulo) => (
+          <Articulo
+            key={articulo.id}
+            nombre={articulo.nombre}
+            precio={articulo.precio}
+            imagen={articulo.imagen}
+          />
+        ))
+      ) : (
+        <div style={{ gridColumn: "1 / -1", textAlign: "center", padding: "40px" }}>
+          <p>No se encontraron productos que coincidan con tu búsqueda.</p>
+        </div>
+      )}
     </div>
   );
 }

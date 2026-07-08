@@ -1,18 +1,67 @@
- {
-      id: 1,
-      nombre: "Campera Negra",
-      precio: 80000,
-      imagen: "/imagenes/campera.jpg",
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Campera Negra",
+      "precio": 80000,
+      "imagen": "/imagenes/campera.jpg",
+      "coleccion": "general"
     },
     {
-      id: 2,
-      nombre: "Buzo Gris",
-      precio: 55000,
-      imagen: "/imagenes/buzo.jpg",
+      "id": 2,
+      "nombre": "Buzo Gris",
+      "precio": 55000,
+      "imagen": "/imagenes/buzo.jpg",
+      "coleccion": "general"
     },
     {
-      id: 3,
-      nombre: "Pantalón Cargo",
-      precio: 70000,
-      imagen: "/imagenes/cargo.jpg",
+      "id": 3,
+      "nombre": "Pantalón Cargo",
+      "precio": 70000,
+      "imagen": "/imagenes/cargo.jpg",
+      "coleccion": "general"
     },
+    {
+      "id": 4,
+      "nombre": "Campera Ligera",
+      "precio": 70000,
+      "imagen": "/imagenes/campera-ligera.jpg",
+      "coleccion": "spring26"
+    },
+    {
+      "id": 5,
+      "nombre": "Polo Manga Corta",
+      "precio": 45000,
+      "imagen": "/imagenes/polo.jpg",
+      "coleccion": "spring26"
+    },
+    {
+      "id": 6,
+      "nombre": "Pantalón Corto",
+      "precio": 55000,
+      "imagen": "/imagenes/short.jpg",
+      "coleccion": "spring26"
+    },
+    {
+      "id": 7,
+      "nombre": "Abrigo Invierno",
+      "precio": 95000,
+      "imagen": "/imagenes/abrigo.jpg",
+      "coleccion": "winter26"
+    },
+    {
+      "id": 8,
+      "nombre": "Suéter Térmico",
+      "precio": 65000,
+      "imagen": "/imagenes/sueter.jpg",
+      "coleccion": "winter26"
+    },
+    {
+      "id": 9,
+      "nombre": "Pantalón Térmico",
+      "precio": 75000,
+      "imagen": "/imagenes/pantalon-termico.jpg",
+      "coleccion": "winter26"
+    }
+  ]
+}

@@ -1,58 +1,73 @@
-/* Articulo.css */
-
 .articulo {
-    width: 280px;
-    background: #fff;
-    border-radius: 12px;
+    width: 100%; /* Se ajustará al ancho definido por el contenedor */
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 0; /* Sin bordes redondeados */
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: none; /* Sin sombra */
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin: 0; /* El espaciado lo maneja el contenedor */
+    padding: 10px;
+    border: 1px transparent rgba(0, 0, 0, 0.1); /* Borde sutil */
 }
 
 .articulo:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.9); /* Fondo ligeramente más opaco al pasar el mouse */
 }
 
 .articulo img {
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .articulo h3 {
-    margin: 18px 0 10px;
-    font-size: 1.3rem;
-    color: #222;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
 }
 
 .articulo p {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #8a6d3b;
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.botones {
+    display: flex; /* Usa flexbox para alinear los botones */
+    justify-content: space-between; /* Espaciado uniforme entre los botones */
+    align-items: center; /* Alinea los botones verticalmente */
+    margin-top: 10px; /* Espaciado superior */
 }
 
 .articulo button {
-    width: 85%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #111;
-    color: white;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #d8d8d8;
+    background: transparent;
+    color: #333;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.articulo button:hover {
-    background: #8a6d3b;
-    transform: scale(1.05);
+.articulo button.Compra {
+    width: 80%;
+}
+.articulo button.Compra:hover {
+    
+    background: #333;
+    color: #ffffff;
 }
 
-.articulo button:active {
-    transform: scale(0.98);
+.articulo button.Carrito {
+    width: 20%;
+}
+.articulo button.Carrito:hover {
+    background: #b48c5a;
 }

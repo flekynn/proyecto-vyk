@@ -1,26 +1,19 @@
+import { useState, useEffect } from "react";
 import Articulo from "../components/Articulo";
+import "./styles/Productos.css";
+
 
 function Spring2026() {
-  const articulos = [
-    {
-      id: 1,
-      nombre: "Campera Ligera",
-      precio: 70000,
-      imagen: "/imagenes/campera-ligera.jpg",
-    },
-    {
-      id: 2,
-      nombre: "Polo Manga Corta",
-      precio: 45000,
-      imagen: "/imagenes/polo.jpg",
-    },
-    {
-      id: 3,
-      nombre: "Pantalón Corto",
-      precio: 55000,
-      imagen: "/imagenes/short.jpg",
-    },
-  ];
+  const [articulos, setArticulos] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/productos")
+      .then((data) => data.json())
+      .then((resultado) =>
+        setArticulos(resultado.filter((articulo) => articulo.coleccion === "spring26"))
+      )
+      .catch((error) => console.error("Error al cargar los datos:", error));
+  }, []);
 
   return (
     <div className="contenedor-articulos">
